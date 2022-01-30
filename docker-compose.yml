@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  webex-bot:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
