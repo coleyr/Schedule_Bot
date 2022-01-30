@@ -1,8 +1,17 @@
-version: "3.9"
+version: "3"
 services:
   webex-bot:
+    tty: true
     build: .
+    networks:
+      - main
+    volumes:
+      - ./webexteamsbot:/code/app
     ports:
       - "80:80"
       - "443:443"
-    tty: true
+      - "5000:5000"
+    env_file: .env
+
+networks:
+  main:
