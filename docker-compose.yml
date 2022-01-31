@@ -6,7 +6,7 @@ services:
     networks:
       - main
     volumes:
-      - ./webexteamsbot:/code/app
+      - ./app:/code/app
     ports:
       - "5000:5000"
     env_file: .env
