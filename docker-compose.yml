@@ -1,14 +1,22 @@
 version: "3"
-services:
+services:  
+  nginx:
+    restart: always
+    build: ./nginx
+    image: nginx
+    networks:
+      - main
+    ports:
+      - "8000:8000"
   webex-bot:
     tty: true
     build: .
     networks:
       - main
     volumes:
-      - ./app:/code/app
+      - ./app:/app
     ports:
-      - "5000:5000"
+      - "5000"
     env_file: .env
 
 networks:

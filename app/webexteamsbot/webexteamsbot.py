@@ -8,11 +8,6 @@ from webexteamsbot.models import Response
 import sys
 import json
 
-# __author__ = "imapex"
-# __author_email__ = "CiscoTeamsBot@imapex.io"
-# __copyright__ = "Copyright (c) 2016 Cisco Systems, Inc."
-# __license__ = "Apache 2.0"
-
 
 class TeamsBot(Flask):
     """An instance of a Webex Teams Bot"""

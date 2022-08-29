@@ -1,4 +1,4 @@
-from .webexteamsbot import TeamsBot  # noqa
+# from .webexteamsbot import TeamsBot  # noqa
 
 __author__ = """Cole Angel"""
 __email__ = "cooleyrangel@gmail.com"

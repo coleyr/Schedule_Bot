@@ -54,7 +54,7 @@ def _format_schedule_msg(sc: dict, message_params: str):
 # A simple command that returns weeks schedule
 
 
-def show_schedule(incoming_msg):
+def show_schedule(incoming_msg, bot):
     """
     Sample function to do some action.
     :param incoming_msg: The incoming message object from Teams
@@ -66,3 +66,9 @@ def show_schedule(incoming_msg):
     with open('sample_data.json', 'r') as f:
         sc = json.loads((f.read()))
     return _format_schedule_msg(sc, message_params=message_params)
+
+def say_hi(incoming_msg, bot):
+    sender = bot.teams.people.get(incoming_msg.personId)
+
+    response = "Hello {}".format(sender.firstName)
+    return response
