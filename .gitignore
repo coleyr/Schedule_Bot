@@ -2,3 +2,4 @@ secret_key.yml
 /Lib/*
 /Scripts/*
 .env
+*/__pycache__/*
