@@ -18,6 +18,7 @@ services:
     ports:
       - "5000"
     env_file: .env
+    command: [gunicorn, --bind, 0.0.0.0:8000, wsgi:bot]
 
 networks:
   main:

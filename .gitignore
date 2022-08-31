@@ -1,5 +1,7 @@
 secret_key.yml
+/.vscode/
 /Lib/*
 /Scripts/*
 .env
 */__pycache__/*
+*/pyvenv.cfg
